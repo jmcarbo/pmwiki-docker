@@ -3,7 +3,7 @@ FROM php:5.6-apache
 RUN apt-get update && apt-get install -y \
       wget
 
-ENV PMWIKI_VERSION 2.2.80
+ENV PMWIKI_VERSION 2.2.106
 
 RUN wget -O /tmp/pmwiki-${PMWIKI_VERSION}.tgz http://www.pmwiki.org/pub/pmwiki/pmwiki-${PMWIKI_VERSION}.tgz && \
     tar -xvzC /tmp/ -f /tmp/pmwiki-${PMWIKI_VERSION}.tgz && \
